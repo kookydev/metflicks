@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Poppins:300'); 
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Poppins:300,400,500,600,700,800|Open+Sans:300,400,600,700,800'); 
 body {
     padding: 0;
     margin: 0;
     background: #1a1a1a;
     font-family:'Poppins', sans-serif;
     color: white;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100%;
 }
 
 .header {
@@ -15,21 +20,34 @@ body {
     width: 100%;
 }
 
-.mainhero {
-    height: 90vh;
+.mainhero {    font-family: 'News Cycle', sans-serif;
+    height: 92vh;
+    /* border: 2px solid red; */
 
-}
+}    
 
-.signin-button {
+
+
+.button {
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e50914;
-    font-weight: 400;
     margin: 18px;
     border-radius: 3px;
+    z-index: 100;
+    box-shadow: 1px 1px 2px #1a1a1a;   
+
+}
+
+.button:hover {
+    background-color: #f40612;
+}
+
+.button-signin {
     font-size: 16px;
+    font-weight: 400;    
     height: 33px;
     width: 120px;
 }
@@ -80,8 +98,8 @@ body {
     width: 100%;
     height: 65%;
     background-image: linear-gradient(to top,rgba(26,26,26,1) 0%,rgba(26,26,26,0) 65%);
-    z-index: 20;
-    top: auto;
+    z-index: 10;
+
     bottom: 0px;
 }
 
@@ -91,8 +109,7 @@ body {
     background-image: linear-gradient(to top,rgba(0,0,0,.9) 20%,rgba(0,0,0,0) 65%);
     height: 65%;
     width: 100%;
-    bottom: 6%;
-    top: auto;
+    bottom: 8vh;
     z-index: 10;
 }
 
@@ -100,9 +117,46 @@ body {
     position: relative;
     background: #1a1a1a;
     display: flex;
-    height: 34%;
-    top: 0pxpx;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    top: -2px;
+    /* border: 2px solid greenyellow; */
+}
 
+.actioncall-text {
+    position: relative;
+    z-index: 40;
+    text-align: center;
+}
+
+.actioncall-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 8vw;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.1em;
+}
+
+.actioncall-text p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4vw;
+    letter-spacing: 0.08em;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.2em;
+}
+
+.button-actioncall {
+    align-self: center;
+    height: 48px;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.1em;
 }
 
 /* background: #1a1a1a; */
