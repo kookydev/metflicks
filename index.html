@@ -22,7 +22,7 @@
                 </svg>
             </div>
             <a href="https://www.netflix.com/gb/login" class="button-signin button">
-                Sign In
+                <span>Sign In</span> 
             </a>
         </div>
         <div class="mainhero">
@@ -41,10 +41,10 @@
                 </div>
             </div>
         </div>
-        <div class="info">
+        <div class="info" id="info">
             <div class="info-header-wrapper">
                 <div class="info-header">
-                    <div class="info-header-button active" id="info-header-cancel">
+                    <a href="#info" class="info-header-button active" id="info-header-cancel">
                         <div class="icon-wrapper"> <svg version="1.1" viewBox="0 0 40 48" id="icon-cancel" class="svg-icon svg-icon-icon-cancel "
                                 focusable="true">
                                 <title></title>
@@ -52,8 +52,8 @@
                             </svg>
                         </div>
                         <span>Cancel</span>
-                    </div>
-                    <div class="info-header-button" id="info-header-devices">
+                    </a>
+                    <a href="#info" class="info-header-button" id="info-header-devices">
                         <div class="icon-wrapper"><svg viewBox="0 0 91 48" class="svg-icon svg-icon-icon-cross-device-screens-small "
                                 focusable="true">
                                 <title></title>
@@ -64,8 +64,8 @@
                             </svg>
                         </div>
                         <span>Devices</span>
-                    </div>
-                    <div class="info-header-button" id="info-header-price">
+                    </a>
+                    <a href="#info" class="info-header-button" id="info-header-price">
                         <div class="icon-wrapper"><svg viewBox="0 0 63 48" class="svg-icon svg-icon-icon-price-tag "
                                 focusable="true">
                                 <title></title>
@@ -78,27 +78,26 @@
                             </svg>
                         </div>
                         <span>Price</span>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="info-body">
                 <div id="info-body-cancel">
-                    <div class="body-text">If you decide Netflix isn't for you – no problem. No commitment. Cancel
+                    <div class="info-subcontainer"> <div class="body-text">If you decide Netflix isn't for you – no problem. No commitment. Cancel
                         online at any time.</div>
                     <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" class="button-actioncall button">
                         Join free for a month
-                    </a>
+                    </a></div>
                     <img src="/assets/asset_cancelanytime_withdevice.png" alt="Cancel any time on any device" srcset="">
                 </div>
                 <div id="info-body-devices"></div>
                 <div id="info-body-price"></div>
             </div>
         </div>
-        <div class="site-footer-wrapper centered dark">
-            <div class="footer-divider"></div>
+        <div class="site-footer-wrapper">
             <div class="site-footer">
                 <p class="footer-top">Questions? Call <a class="footer-top-a" href="tel:0800 096 8879">0800 096 8879</a></p>
-                <ul class="footer-links structural">
+                <ul class="footer-links">
                     <li class="footer-link-item" placeholder="footer_responsive_link_faq_item"><a class="footer-link"
                             href="https://help.netflix.com/support/412" placeholder="footer_responsive_link_faq"><span
                                 id="">FAQ</span></a></li>
