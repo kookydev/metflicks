@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <title>Metflix</title>
 </head>
@@ -22,7 +24,7 @@
                 </svg>
             </div>
             <a href="https://www.netflix.com/gb/login" class="button-signin button">
-                <span>Sign In</span> 
+                <span>Sign In</span>
             </a>
         </div>
         <div class="mainhero">
@@ -36,7 +38,7 @@
                         <p>Watch anywhere. Cancel at any time.</p>
                     </div>
                     <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" class="button-actioncall button">
-                        Join free for a month
+                        Join free for a month <i class="fas fa-angle-right"></i>
                     </a>
                 </div>
             </div>
@@ -51,10 +53,11 @@
                                 <path d="M29.55 18.7v-4.6c-5.2.4-4.6 2.8-4.6 2.8.3 1.7 2.35 2.35 2.35 2.35.6-.35 2.25-.55 2.25-.55zm3.7 1L33 21.3c-9.15-.3-8.7-3.75-8.7-3.75l.15 5.2c1.1 4.05 8.35 4.2 8.2 4.2l-.2 1.5 6.9-3.8-6.1-4.95zm-20.3 6.25c-.5-.5-1.3-.45-1.8.05-.45.5-.45 1.25.05 1.75s1.3.45 1.75-.05c.5-.5.5-1.25 0-1.75zm2.35-15.9L1.5 1.45V38.9l2.6 1.45 11.2 6.2v-36.5zM1.5 40.35C.4 39.85 0 39.7 0 38.9l1.5 1.45zM28.05 28.1h1.45v10.8c0 .8-.65 1.45-1.45 1.45H16.8v6.15c0 .849-.65 1.5-1.45 1.5L1.5 40.35 0 38.9V1.45C0 .65.65 0 1.5 0h26.55c.8 0 1.45.65 1.45 1.45v11.2h-1.45V1.45H4.1L15.6 8.6c.95.35 1.2.65 1.2 1.45V38.9h11.25V28.1z"></path>
                             </svg>
                         </div>
-                        <span>Cancel</span>
+                        <span class="description-small">Cancel</span><span class="description-desktop">No commitments -
+                            Cancel online at any time</span>
                     </a>
                     <a href="#info" class="info-header-button" id="info-header-devices">
-                        <div class="icon-wrapper"><svg viewBox="0 0 91 48" class="svg-icon svg-icon-icon-cross-device-screens-small "
+                        <div class="icon-wrapper"><svg viewBox="0 0 91 48" class="svg-icon device-screens-small"
                                 focusable="true">
                                 <title></title>
                                 <g id="three-devices-condensed" fill="currentColor">
@@ -62,8 +65,15 @@
                                         id="Fill-5"></path>
                                 </g>
                             </svg>
+                            <svg viewBox="0 0 145 48" class="svg-icon device-screens-desktop " focusable="true">
+                                <title></title>
+                                <g id="condensed" fill="currentColor">
+                                    <path d="M138.211 44.009c-.398 0-.697.349-.697.748 0 .398.3.698.697.698.4 0 .749-.3.749-.698 0-.4-.35-.748-.749-.748zm-4.19 2.593h8.682V28.191h-8.682v18.411zm-.05-19.807h8.732c.798 0 1.396.598 1.396 1.396v18.362c0 .798-.598 1.447-1.396 1.447h-8.732c-.749 0-1.397-.649-1.397-1.447V28.191c0-.798.648-1.396 1.397-1.396zM74.095 44.009h48.7V13.173h-48.7v30.836zm0-32.233h48.75c.748 0 1.396.648 1.396 1.446v30.787c0 .798-.648 1.396-1.397 1.396H74.095c-.797 0-1.396-.598-1.396-1.396V13.222c0-.798.599-1.446 1.396-1.446zm56.583 34.677v.649c0 .499-.799.898-1.747.898H67.66c-.998 0-1.746-.4-1.746-.898v-.649h64.764zm-111.567.898v-2.445c0-.798.648-1.446 1.396-1.446h29.688c.799 0 1.397.648 1.397 1.446v2.445h-1.397v-2.494H20.557v2.494H19.11zM1.397 41.065h68.208V1.397H1.397v39.668zM1.397 0h68.208c.799 0 1.447.599 1.447 1.397v39.668c0 .748-.648 1.396-1.447 1.396H1.397A1.394 1.394 0 0 1 0 41.065V1.397C0 .599.599 0 1.397 0z"
+                                        id="Fill-7"></path>
+                                </g>
+                            </svg>
                         </div>
-                        <span>Devices</span>
+                        <span class="description-small">Devices</span><span class="description-desktop">Watch anywhere</span>
                     </a>
                     <a href="#info" class="info-header-button" id="info-header-price">
                         <div class="icon-wrapper"><svg viewBox="0 0 63 48" class="svg-icon svg-icon-icon-price-tag "
@@ -77,21 +87,111 @@
                                 </g>
                             </svg>
                         </div>
-                        <span>Price</span>
+                        <span class="description-small">Price</span><span class="description-desktop">Pick your price</span>
                     </a>
                 </div>
             </div>
             <div class="info-body">
                 <div id="info-body-cancel">
-                    <div class="info-subcontainer"> <div class="body-text">If you decide Netflix isn't for you – no problem. No commitment. Cancel
-                        online at any time.</div>
-                    <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" class="button-actioncall button">
-                        Join free for a month
-                    </a></div>
+                    <div class="info-subcontainer">
+                        <div class="body-text">If you decide Netflix isn't for you – no problem. No commitment. Cancel
+                            online at any time.</div>
+                        <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" id="button-info-cancel"
+                            class="button-actioncall button">
+                            Join free for a month
+                        </a>
+                    </div>
                     <img src="/assets/asset_cancelanytime_withdevice.png" alt="Cancel any time on any device" srcset="">
                 </div>
-                <div id="info-body-devices"></div>
-                <div id="info-body-price"></div>
+                <div id="info-body-devices">
+                    <div class="content">
+                        <div id="device-content-cta" class="body-text">Watch TV programmes and films at any time,
+                            anywhere –
+                            personalised for you.</div>
+                        <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" id="devices-button"
+                            class="button-actioncall-devices button-actioncall button">
+                            Join free for a month
+                        </a>
+                        <div class="device-sub-info"><img src="assets/asset_TV_UI.png" alt="TV">
+                            <h3>Watch on your TV</h3>
+                            <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                        </div>
+                        <div class="device-sub-info"><img src="assets/ipad&phone.png" alt="TV">
+                            <h3>Watch instantly or download for later.</h3>
+                            <p>Available on phone and tablet, wherever you go.</p>
+                        </div>
+                        <div class="device-sub-info"><img src="assets/macbook.png" alt="TV">
+                            <h3>Use any computer</h3>
+                            <p>Watch on Netflix.com.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="info-body-price">
+                    <div class="content">
+                        <div id="price-content-cta" class="body-text">Choose one plan and watch everything on Netflix.</div>
+                        <a href="https://www.netflix.com/getstarted?action=startAction&locale=en-GB" id="price-button"
+                            class="button-actioncall-price button-actioncall button">
+                            Join free for a month
+                        </a>
+                        <div class="price-table">
+                            <!-- <span class="row-label"></span> -->
+                            <ul class="headings">
+                                <li>Basic</li>
+                                <li>standard</li>
+                                <li>premium</li>
+                            </ul>
+                            <span class="row-label">Monthly price after free month ends on 12/03/19</span>
+                            <ul class="checks">
+                                <li>£5.99</li>
+                                <li>£7.99</li>
+                                <li>£9.99</li>
+                            </ul>
+                            <span class="row-label gray">HD available</span>
+                            <ul class="checks gray">
+                                <li class="fas fa-times"></li>
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+                            <span class="row-label">Ultra HD available</span>
+                            <ul class="checks">
+                                <li class="fas fa-times"></li>
+                                <li class="fas fa-times"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+                            <span class="row-label gray">Screens you can watch on at the same time</span>
+                            <ul class="checks gray">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>4</li>
+                            </ul>
+                            <span class="row-label">Watch on your laptop, TV, phone and tablet</span>
+                            <ul class="checks">
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+                            <span class="row-label gray">Unlimited films and TV programmes</span>
+                            <ul class="checks gray">
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+                            <span class="row-label">Cancel at any time</span>
+                            <ul class="checks">
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+                            <span class="row-label gray">First month free</span>
+                            <ul class="checks gray">
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                                <li class="fas fa-check"></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="site-footer-wrapper">
@@ -105,7 +205,8 @@
                             href="https://help.netflix.com" placeholder="footer_responsive_link_help"><span id="">Help
                                 Centre</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_account_item"><a class="footer-link"
-                            href="/youraccount" placeholder="footer_responsive_link_account"><span id="">Account</span></a></li>
+                            href="https://www.netflix.com/gb/youraccount" placeholder="footer_responsive_link_account"><span
+                                id="">Account</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_media_center_item"><a class="footer-link"
                             href="https://media.netflix.com/" placeholder="footer_responsive_link_media_center"><span
                                 id="">Media Centre</span></a></li>
@@ -115,12 +216,15 @@
                     <li class="footer-link-item" placeholder="footer_responsive_link_jobs_item"><a class="footer-link"
                             href="https://jobs.netflix.com/jobs" placeholder="footer_responsive_link_jobs"><span id="">Jobs</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_gift_redeem_item"><a class="footer-link"
-                            href="/redeem" placeholder="footer_responsive_link_gift_redeem"><span id="">Redeem gift
+                            href="https://www.netflix.com/gb/redeem" placeholder="footer_responsive_link_gift_redeem"><span
+                                id="">Redeem gift
                                 cards</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_gift_buy_item"><a class="footer-link"
-                            href="/gift-cards" placeholder="footer_responsive_link_gift_buy"><span id="">Buy gift cards</span></a></li>
+                            href="https://www.netflix.com/gb/gift-cards" placeholder="footer_responsive_link_gift_buy"><span
+                                id="">Buy gift cards</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item"><a class="footer-link"
-                            href="/watch" placeholder="footer_responsive_link_waysToWatch"><span id="">Ways to Watch</span></a></li>
+                            href="https://www.netflix.com/gb/watch" placeholder="footer_responsive_link_waysToWatch"><span
+                                id="">Ways to Watch</span></a></li>
                     <li class="footer-link-item" placeholder="footer_responsive_link_terms_item"><a class="footer-link"
                             href="https://help.netflix.com/legal/termsofuse" placeholder="footer_responsive_link_terms"><span
                                 id="">Terms of Use</span></a></li>
