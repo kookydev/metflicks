@@ -774,17 +774,6 @@ body {
     
     .background {
         height: 100%;
-        display: block;
-        position: relative;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        background-image: url("./assets/background.jpg");
-        background-position: 67%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 0;
     }
 
     .bg-gradient::after {
