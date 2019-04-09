@@ -1,4 +1,4 @@
-# metflicks
+# "Metflicks" - a netflix clone...
 A clone of the Netflix front page created in HTML, CSS & Javascript.
 
 It's fully responsive and, in my opinion, improves on the original it's based on in a couple of ways:
